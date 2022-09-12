@@ -14,5 +14,6 @@ public class WeatherModel {
     Double temp;
     String info;
     Double humidity;
+    String icon;
     Double speed;
 }
