@@ -37,7 +37,7 @@ public interface BotConfig {
 
 ### Screenshots:
 
-![](../../Desktop/tg-photo.png)
+![](screenshot.png)
 
 ### What you need to run the app:
 * Java runtime installed
