@@ -45,9 +45,9 @@ public class ApiConnectorService implements ApiConnectorByCity, ApiConnectorByGe
         weatherModel.setName(object.getString("name"));
 
         JSONArray weatherInfo = (JSONArray) object.get("weather");
-        JSONObject description = (JSONObject) weatherInfo.iterator().next();
-        weatherModel.setInfo(description.getString("description"));
-        weatherModel.setIcon(description.getString("icon"));
+        JSONObject weatherDescription = (JSONObject) weatherInfo.iterator().next();
+        weatherModel.setInfo(weatherDescription.getString("description"));
+        weatherModel.setIcon(weatherDescription.getString("icon"));
 
         JSONObject main = object.getJSONObject("main");
         weatherModel.setTemp(main.getDouble("temp"));
